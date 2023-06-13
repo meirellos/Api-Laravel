@@ -1,3 +1,5 @@
+#Documentação https://laravel-docs-pt-br.readthedocs.io/en/latest/mail/
+
 #C -> Controller
 #F -> Factory
 #M -> Migration
