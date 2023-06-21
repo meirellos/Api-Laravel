@@ -19,3 +19,7 @@
 #php artisan migrate:fresh
 
 #php artisan db:seed
+
+#Criação de controller utilizando a api. Criamos a pasta chamada Api dentro da Controller, e dentro dela a V1.
+#php artisan make:controller Api/V1/InvoiceController --resource
+#php artisan make:controller Api/V1/UserController --resource

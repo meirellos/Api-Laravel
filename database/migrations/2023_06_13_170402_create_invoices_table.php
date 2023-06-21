@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('invoices', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id'); 
+            //Ligando o campo user_id ao campo id da tabela users.
             $table->foreign('user_id')->references('id')->on('users');
             $table->string('type');
             $table->boolean('paid'); //0 ou 1

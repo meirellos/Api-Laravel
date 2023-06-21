@@ -1,10 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\V1;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\User;
 
-class InvoiceController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,6 +16,7 @@ class InvoiceController extends Controller
     public function index()
     {
         //
+        return User::all();
     }
 
     /**
