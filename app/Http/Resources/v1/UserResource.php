@@ -9,10 +9,10 @@ class UserResource extends JsonResource
 
     public function toArray($request)
     {
-        return [
+        return [    //Aqui irá retornar os dados de todos os usuários, com os seguintes métodos abaixo:
             'firstName' => $this->firstName,
             'lastName' => $this->lastName,
-            'fullName' => $this->firstName . ' ' . $this->lastName,
+            'fullName' => $this->firstName . ' ' . $this->lastName, //Trazendo o nome completo, que é quando concatena o primeiro, com o segundo.
             'email' => $this->email,
         ];
     }

@@ -14,7 +14,7 @@ class UserController extends Controller
     public function index()
     {
         //
-    return UserResource::collection(User::all());
+    return UserResource::collection(User::all()); //Trazendo as collections de todos os usuários.
     //return new  UserResourceCollection(User::all());
 
     //return User::select('name', 'email')->get();

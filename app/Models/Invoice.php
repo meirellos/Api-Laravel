@@ -9,6 +9,6 @@ class Invoice extends Model
 {
     use HasFactory;
     public function user(){
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class); //Trazendo as invoices que pertencem a um usuário.
     }
 }

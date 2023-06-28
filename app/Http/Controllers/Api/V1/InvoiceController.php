@@ -12,7 +12,7 @@ class InvoiceController extends Controller
     public function index()
     {
         //
-        return InvoiceResource::collection(Invoice::with('user')->get());
+        return InvoiceResource::collection(Invoice::with('user')->get()); //Trazendo todas as invoices para cada usuário.
     }
 
     public function create()
