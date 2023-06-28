@@ -23,3 +23,13 @@
 #Criação de controller utilizando a api. Criamos a pasta chamada Api dentro da Controller, e dentro dela a V1.
 #php artisan make:controller Api/V1/InvoiceController --resource
 #php artisan make:controller Api/V1/UserController --resource
+#ou
+#php artisan make:controller Api/V1/UserController -r
+
+#/api/users
+
+#Podemos atualizar o RouteServiceProvider para mudar o prefixo de /api/users para /api/v1/users ou podemos fazer direto pelo route::group
+
+#Criação de Resources
+#php artisan make:resource v1/UserResource
+#php artisan make:resource V1/InvoiceResource
