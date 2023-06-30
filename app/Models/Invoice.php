@@ -8,6 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Invoice extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'user_id',
+        'type',
+        'paid',
+        'payment_date',
+        'value'
+    ];
     public function user(){
         return $this->belongsTo(User::class); //Trazendo as invoices que pertencem a um usuário.
     }

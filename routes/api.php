@@ -17,5 +17,6 @@ Route::prefix('v1')->group(function (){
     Route::get('/users/{user}', [UserController::class, 'show']); //Criação de rota na qual irá aparecer os dados dos usuários pelo id.
     Route::get('/invoices', [InvoiceController::class, 'index']); //Criação de rota principal para as invoices, no qual irá mostrar a lista de todos os pedidos.
     Route::get('/invoices/{invoice}', [InvoiceController::class, 'show']); //Criação de rota para trazer as invoices para cada usuário.
+    Route::post('/invoices', [InvoiceController::class, 'store']); 
 });
 
